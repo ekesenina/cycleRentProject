@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'main';
+  src: url(../fonts/MullerRegular.ttf);
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* line 144, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/variables.sass */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* line 147, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/variables.sass */
+::-webkit-scrollbar-track {
+  background-color: #1d1b1b94;
+}
+
+/* line 150, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/variables.sass */
+::-webkit-scrollbar-thumb {
+  background-color: #FFCB03;
+  border-radius: 10px;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* line 160, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/variables.sass */
+.loader {
+  animation: rotate 3s infinite linear;
+}
+
+@media screen and (min-width: 601px) {
+  /* line 6, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/main.sass */
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    min-height: calc( 100vh - 200px);
+    background-color: #EDF6F9;
+    background-image: url(../img/bubbles.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+  /* line 13, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/main.sass */
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw;
+    min-height: calc( 100vh - 272.8px);
+    background-image: url(../img/bubbles.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

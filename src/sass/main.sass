@@ -1,0 +1,19 @@
+@import 'variables'
+
+
+
+@media screen and ( min-width: 601px )
+    .main
+        @include center
+        flex-direction: column
+        @include layout
+
+
+@media ( min-width: 0px ) and ( max-width: 600px )
+    .main
+        @include center
+        flex-direction: column
+        justify-content: flex-start
+        @include layoutMobile
+        
+

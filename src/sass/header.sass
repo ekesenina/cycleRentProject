@@ -1,0 +1,113 @@
+@import 'variables'
+
+
+@media screen and ( min-width: 768px )
+    .header
+        min-width: calc( 100vw - 80px )
+        max-width: calc( 100vw - 80px )
+        padding: $content
+        min-height: 100px
+        background-color: $main-color
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25)
+        @include center
+        justify-content: space-between
+        z-index: 3
+        &__navToggle
+            background-color: $main-color
+            box-shadow: none
+            border: none
+            cursor: pointer
+            color: #fff
+            width: 48px
+            height: 48px
+            background-image: url(../img/burger.png)
+            &:hover,
+            &:focus
+                background-image: url(../img/burger_hover.png)
+        &__nav
+            display: flex
+            align-items: center
+            &__link
+                @include mainFont
+                @include transition
+                margin-right: 20px
+                text-transform: none
+                font-size: 1.25vw
+                &:hover, .active
+                    color: #C17D17
+                    text-decoration: underline
+            &__button
+                &__signIn
+                    @include mainFont
+                    @include button
+                    width: 150px
+                    height: 70px
+
+    .active
+        color: #C17D17
+
+
+
+@media ( min-width: 0px ) and ( max-width: 768px )
+    .header
+        min-width: calc( 100vw - 80px )
+        max-width: calc( 100vw - 80px )
+        padding: $content
+        min-height: 100px
+        background-color: $main-color
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25)
+        @include center
+        justify-content: space-between
+        z-index: 3
+        &__logo
+            width: 135px
+        &__navToggle
+            background-color: $main-color
+            box-shadow: none
+            border: none
+            cursor: pointer
+            color: #fff
+            width: 48px
+            height: 48px
+            background-image: url(../img/burger.png)
+            &:hover,
+            &:focus
+                background-image: url(../img/burger_hover.png)
+        &__nav
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            justify-content: center
+            max-width: 40vw
+            max-height: 50vh
+            min-width: 30vw
+            min-height: 15vh
+            overflow: auto
+            position: absolute
+            top: 70px
+            right: 20px
+            padding: 10px
+            z-index: 3
+            background-color: $main-color
+            border-radius: 15px
+            box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25)
+            &__link
+                @include mainFont
+                @include transition
+                font-size: 16px
+                margin-bottom: 10px
+                text-transform: none
+                border-bottom: 1px solid #fff
+                &:hover, .active
+                    color: #C17D17
+            &__button
+                &__signIn
+                    @include mainFont
+                    @include button
+                    font-size: 16px
+                    width: 30vw
+                    height: 35px
+                    align-self: center
+
+    .active
+        color: #C17D17

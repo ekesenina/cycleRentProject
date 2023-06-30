@@ -1,0 +1,28 @@
+@import 'variables'
+
+.message
+    position: absolute
+    top: 150px
+    @include secondaryFont
+    @include popUp
+    @include center
+    flex-direction: column
+    justify-content: space-between
+    background: rgba(35, 32, 32, 0.897)
+    padding: 10px
+    font-weight: 600
+    min-width: fit-content
+    min-height: fit-content
+    &__title
+        max-width: 70vw
+        text-align: center
+    &__img
+        margin-bottom: 20px
+    &__button
+        @include mainFont
+        @include button
+        padding: 20px 25px
+        max-width: fit-content
+        font-weight: 400
+        margin: 20px 0px 
+        

@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'main';
+  src: url(../fonts/MullerRegular.ttf);
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* line 144, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/variables.sass */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* line 147, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/variables.sass */
+::-webkit-scrollbar-track {
+  background-color: #1d1b1b94;
+}
+
+/* line 150, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/variables.sass */
+::-webkit-scrollbar-thumb {
+  background-color: #FFCB03;
+  border-radius: 10px;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* line 160, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/variables.sass */
+.loader {
+  animation: rotate 3s infinite linear;
+}
+
+/* line 3, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/message.sass */
+.message {
+  position: absolute;
+  top: 150px;
+  font-family: 'main';
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffff;
+  text-transform: none;
+  background: rgba(35, 32, 32, 0.57);
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+  background-filter: blur(15px);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(35, 32, 32, 0.897);
+  padding: 10px;
+  font-weight: 600;
+  min-width: fit-content;
+  min-height: fit-content;
+}
+
+/* line 16, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/message.sass */
+.message__title {
+  max-width: 70vw;
+  text-align: center;
+}
+
+/* line 19, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/message.sass */
+.message__img {
+  margin-bottom: 20px;
+}
+
+/* line 21, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/message.sass */
+.message__button {
+  font-family: 'main';
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffff;
+  text-transform: uppercase;
+  border-radius: 30px;
+  background-color: #FFCB03;
+  cursor: pointer;
+  color: #232020;
+  padding: 10px 15px;
+  border: none;
+  filter: drop-shadow(8px 7px 4px rgba(0, 0, 0, 0.25));
+  transition: all;
+  transition-duration: 0.5s;
+  padding: 20px 25px;
+  max-width: fit-content;
+  font-weight: 400;
+  margin: 20px 0px;
+}
+
+/* line 71, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/variables.sass */
+.message__button:hover {
+  background-color: #C17D17;
+  color: #FFFFFF;
+  box-shadow: inset 2px 4px 6px rgba(0, 0, 0, 0.25);
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+/*# sourceMappingURL=message.css.map */

@@ -1,0 +1,130 @@
+@import 'variables'
+
+@media screen and ( min-width: 1025px )
+    .list
+        @include window
+        &__back
+            @include backButton
+        &__title
+            @include mainFont
+            margin-bottom: 50px
+            font-size: 24px
+            color: $secondary-color
+        &__table
+            table-layout: fixed
+            border-collapse: collapse
+            text-align: center
+            margin: auto
+            &__head
+                background: #1d1b1b94
+                &__item
+                    width: 150px
+                    padding: 10px
+                    letter-spacing: 1.5px
+                    @include secondaryFont
+                    color: $secondary-color
+                    font-weight: lighter
+            &__body
+                &__item
+                    @include secondaryFont
+                    height: 60px
+                    overflow: hidden
+                    text-overflow: ellipsis
+                    &__link 
+                        max-width: 10vw
+                        text-decoration: none
+                        color: inherit
+                        font-weight: normal
+                        overflow: hidden
+                        text-overflow: ellipsis
+                        &__text
+                            overflow: hidden
+                            text-overflow: ellipsis
+                            margin-left: 15px
+                            word-break: break-word
+                            display: -webkit-box
+                            -webkit-line-clamp: 2
+                            -webkit-box-orient: vertical
+                    &__button
+                        @include button
+                        @include secondaryFont
+                        color: $main-color
+                        font-size: 16px
+                        padding: 10px 15px
+
+
+
+@media ( min-width: 0px ) and ( max-width: 1024px )
+    table 
+        border: 0
+    table caption 
+        font-size: 1.3em
+    table thead 
+        border: none
+        clip: rect(0 0 0 0)
+        height: 1px
+        margin: -1px
+        overflow: hidden
+        padding: 0
+        position: absolute
+        width: 1px
+    table tr 
+        border-bottom: 1px solid #ddd
+        display: block  
+    table td::before 
+        content: attr(data-label)
+        float: left
+        font-weight: bold
+        color: $secondary-color
+    .list
+        @include window
+        margin: 20px
+        &__back
+            @include backButton
+        &__title
+            @include mainFont
+            margin-top: 40px
+            margin-bottom: 15px
+            font-size: 24px
+            color: $secondary-color
+        &__table
+            min-width: -webkit-fill-available
+            table-layout: fixed
+            border-collapse: collapse
+            text-align: center
+            margin: auto
+            &__body
+                display: flex
+                flex-direction: column
+                align-items: center
+                &__item
+                    @include secondaryFont
+                    min-width: -webkit-fill-available
+                    padding: 10px
+                    text-align: start
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+                    &__link 
+                        width: 100%
+                        display: flex
+                        justify-content: start
+                        &__text
+                            max-width: 10rem
+                            overflow: hidden
+                            text-overflow: ellipsis
+                            margin-left: 20px
+                            word-break: break-word
+                            display: -webkit-box
+                            -webkit-line-clamp: 3
+                            -webkit-box-orient: vertical
+                    &__number
+                        align-self: center
+                        margin: 10px 0px
+                    &__button
+                        @include button
+                        @include secondaryFont
+                        color: $main-color
+                        font-size: 16px
+                        padding: 10px 15px
+                        margin: 10px 5px

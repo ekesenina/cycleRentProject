@@ -1,0 +1,87 @@
+@import 'variables'
+
+@media screen and ( min-width: 1025px )
+    .footer
+        min-width: calc( 100vw - 80px )
+        padding: $content
+        min-height: 100px
+        background-color: $main-color
+        box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.25)
+        @include center
+        z-index: 1
+        justify-content: space-between
+        &__leftSide
+            @include center
+            &__logo
+                margin-right: 30px
+            &__a
+                @include link
+                font-size: 1.25vw
+        &__contacts
+            &__a
+                @include link
+                font-size: 1.25vw
+                &:first-child
+                    margin-right: 30px
+
+
+@media ( min-width: 601px ) and ( max-width: 1024px )
+    .footer
+        min-width: calc( 100vw - 80px )
+        padding: $content
+        min-height: 100px
+        background-color: $main-color
+        box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.25)
+        @include center
+        z-index: 1
+        justify-content: space-between
+        &__leftSide
+            @include center
+            flex-direction: column
+            &__logo
+                width: 120px
+            &__a
+                @include link
+                font-size: 13px
+        &__contacts
+            height: 66px
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            &__a
+                @include link
+                font-size: 18px
+                &:first-child
+                    margin-right: 30px
+
+
+@media ( min-width: 0px ) and ( max-width: 600px )
+    .footer
+        min-width: calc( 100vw - 80px )
+        padding: 20px 40px
+        min-height: 100px
+        background-color: $main-color
+        box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.25)
+        @include center
+        flex-direction: column
+        z-index: 1
+        justify-content: space-between
+        &__leftSide
+            @include center
+            flex-direction: column
+            &__logo
+                width: 120px
+            &__a
+                @include link
+                font-size: 13px
+        &__contacts
+            height: 66px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-evenly
+            &__a
+                @include link
+                font-size: 18px
+                &:first-child
+                    margin-right: 30px

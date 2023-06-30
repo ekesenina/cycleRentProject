@@ -1,0 +1,177 @@
+@import 'variables'
+
+@media screen and ( min-width: 769px )
+    .caseDetail
+        @include window
+        margin: 20px
+        flex-direction: row
+        position: relative
+        &__back
+            @include backButton
+        &__photo
+            height: 300px
+        &__button
+            @include button
+            @include secondaryFont
+            color: $main-color
+            padding: 15px 20px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-bottom: 10px
+        &__form
+            max-height: 500px
+            overflow-y: auto
+            margin: 20px
+            display: flex
+            align-items: center
+            flex-direction: column
+            position: relative
+            &__editTime
+                text-align: end
+                @include secondaryFont
+                font-size: 14px
+                align-self: flex-end
+                padding-right: 10px
+            &__item
+                display: flex
+                align-items: center
+                justify-content: space-between
+                min-width: -webkit-fill-available
+                padding: 10px 20px 10px 20px
+                position: relative
+                &__label
+                    @include secondaryFont
+                    color: $secondary-color
+                    font-weight: bold
+                    padding: 9px
+                &__input
+                    position: relative
+                    &__invalid
+                        @include secondaryFont
+                        font-weight: bold
+                        position: absolute
+                        right: 0px
+                        bottom: -7px
+                        font-size: 14px
+                        padding-right: 20px
+                        color: $secondary-color
+                &__input, 
+                &__select, 
+                &__textarea
+                    min-height: 1em
+                    min-width: 25rem
+                    @include secondaryFont
+                    @include input
+                &__select
+                    padding: 9px
+                    min-width: 16.5rem
+                    &__option
+                        color: #b4b4b49a
+                &__enabled
+                    &:hover
+                        color: $secondary-color
+                &__enabled,
+                &__disabled
+                    @include secondaryFont
+                    border-radius: 6px
+                    min-width: 15rem
+                    max-width: 17rem
+                    color: #ffffff
+                    resize: none
+                    margin-left: 50px
+                    overflow-x: hidden
+                    text-overflow: ellipsis
+                    background-color: #ffffff00
+                    cursor: pointer
+
+
+@media ( min-width: 0px ) and ( max-width: 768px )
+    .caseDetail
+        @include window
+        margin: 20px 0px
+        padding: 0px
+        min-width: 90vw
+        max-width: 90vw
+        &__back
+            @include backButton
+        &__photo
+            width: 200px
+            margin-top: 20px
+        &__button
+            @include button
+            @include secondaryFont
+            color: $main-color
+            padding: 15px 20px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 10px 0px 15px
+        &__form
+            max-height: 500px
+            overflow-y: auto
+            margin: 20px 0px
+            display: flex
+            align-items: center
+            flex-direction: column
+            min-width: 80vw
+            max-width: 85vw
+            &__editTime
+                text-align: end
+                @include secondaryFont
+                font-size: 14px
+                align-self: flex-end
+                margin-top: 40px
+                padding-right: 10px
+            &__item
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                justify-content: space-between
+                min-width: -webkit-fill-available
+                padding: 10px 0px
+                position: relative
+                &__label
+                    @include secondaryFont
+                    color: $secondary-color
+                    font-weight: bold
+                    padding: 9px
+                &__input
+                    position: relative
+                    &__invalid
+                        @include secondaryFont
+                        font-weight: bold
+                        position: absolute
+                        right: 0px
+                        bottom: -7px
+                        font-size: 14px
+                        padding-right: 10px
+                        color: $secondary-color
+                &__input, 
+                &__select, 
+                &__textarea
+                    min-height: 1em
+                    min-width: 25rem
+                    @include secondaryFont
+                    @include input
+                &__select
+                    padding: 9px
+                    min-width: 16.5rem
+                    &__option
+                        color: #b4b4b49a
+                &__enabled
+                    &:hover
+                        color: $secondary-color
+                &__enabled,
+                &__disabled
+                    @include secondaryFont
+                    border-radius: 6px
+                    min-width: 15rem
+                    max-width: 17rem
+                    color: #ffffff
+                    resize: none
+                    margin-left: 50px
+                    overflow-x: hidden
+                    text-overflow: ellipsis
+                    background-color: #ffffff00
+                    cursor: pointer

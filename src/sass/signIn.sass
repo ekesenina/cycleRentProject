@@ -1,0 +1,206 @@
+@import 'variables'
+
+
+@media screen and ( min-width: 769px )
+    .signIn
+        @include popUp
+        @include mainFont
+        width: fit-content
+        height: fit-content
+        padding: 40px 80px
+        margin: 20px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: relative
+        &__back
+            @include backButton
+        &__authWay
+            display: flex
+            margin: 20px 0px 40px 0px
+            background-color: none
+            border: none
+            &__link
+                @include mainFont
+                font-size: 1.5em
+                margin-right: 40px
+                &__active
+                    font-size: 1.5em
+                    color: $secondary-color
+                    text-decoration: underline
+                    margin-right: 40px
+        &__form
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            min-width: -webkit-fill-available
+            &__item
+                margin-bottom: 25px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                position: relative
+                min-width: -webkit-fill-available
+                &__label
+                    text-transform: none
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    position: relative
+                    &__required
+                        color: $secondary-color
+                &__agree
+                    display: flex
+                    max-width: -webkit-fill-available
+                    &__styledCheckbox
+                        display: flex
+                        padding: 5px
+                        margin-right: 15px
+                        border-radius: 6px
+                        background: rgba(54, 54, 54, 0.63)
+                        border: 1px solid rgba(54, 54, 54, 0.01)
+                    &__checkbox
+                        opacity: 0
+                        &:checked
+                            opacity: 1
+                &__input
+                    @include input
+                    margin: 0px
+                    &__invalid
+                        @include secondaryFont
+                        font-weight: bold
+                        position: absolute
+                        right: 0px
+                        bottom: -14px
+                        font-size: 14px
+                        color: $secondary-color
+                    &__passwordShow
+                        @include input
+                        min-height: -webkit-fill-available
+                        position: absolute
+                        right: 0px
+                        opacity: 0
+                        min-width: max-content
+                        background-origin: content-box
+            &__button
+                @include mainFont
+                @include button
+                padding: 20px 25px
+                max-width: fit-content
+
+
+
+
+
+@media ( min-width: 0px ) and ( max-width: 768px )
+    .signIn
+        @include popUp
+        @include mainFont
+        width: fit-content
+        height: fit-content
+        padding: 20px 40px
+        margin: 20px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: relative
+        &__back
+            @include backButton
+        &__authWay
+            display: flex
+            flex-direction: column
+            margin: 20px 0px 40px 0px
+            border: none
+            &__link
+                @include mainFont
+                font-size: 1.5em
+                margin-bottom: 20px
+                text-align: center
+                &__active
+                    font-size: 1.5em
+                    color: $secondary-color
+                    text-decoration: underline
+                    margin-bottom: 20px
+        &__form
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            min-width: -webkit-fill-available
+            &__item
+                margin-bottom: 25px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                align-items: center
+                position: relative
+                min-width: -webkit-fill-available
+                &__label
+                    text-transform: none
+                    align-self: flex-start
+                    position: relative
+                    &__required
+                        color: $secondary-color
+                &__agree
+                    display: flex
+                    max-width: -webkit-fill-available
+                    &__styledCheckbox
+                        display: flex
+                        padding: 5px
+                        margin-right: 15px
+                        border-radius: 6px
+                        background: rgba(54, 54, 54, 0.63)
+                        border: 1px solid rgba(54, 54, 54, 0.01)
+                    &__checkbox
+                        opacity: 0
+                        &:checked
+                            opacity: 1
+                &__select
+                    @include input
+                    margin: 0px
+                    padding: 9px
+                    min-width: 16.5rem
+                &__input
+                    @include input
+                    margin: 0px
+                    &__invalid
+                        @include secondaryFont
+                        font-weight: bold
+                        position: absolute
+                        right: 0px
+                        bottom: -14px
+                        font-size: 14px
+                        color: $secondary-color
+                    &__passwordShow
+                        @include input
+                        min-height: -webkit-fill-available
+                        position: absolute
+                        right: 0px
+                        opacity: 0
+                        min-width: max-content
+                        background-origin: content-box
+            &__button
+                @include mainFont
+                @include button
+                padding: 20px 25px
+                max-width: fit-content
+                margin: 20px 0px
+
+.passwordInput[type="text"] 
+    background-image: url(../img/view.svg)
+    background-position: center right
+    background-repeat: no-repeat
+    background-origin: content-box
+
+
+.passwordInput[type="password"] 
+    background-image: url(../img/no-view.svg)
+    background-position: center right
+    background-repeat: no-repeat
+    background-origin: content-box
+
+.approved
+    display: none

@@ -1,0 +1,137 @@
+@import 'variables'
+
+@media screen and ( min-width: 769px )
+    .homePage
+        @include center
+        flex-direction: column
+        justify-content: center
+        padding: 20px
+        &__info
+            display: grid
+            grid-template-areas: 'a b .''a . c''a . c'
+            min-width: calc( 100vw - 80px )
+            max-width: calc( 100vw - 80px )
+            min-height: calc( 100vh - 450px )
+            margin: 0px 40px
+            &__image
+                grid-area: a
+                display: flex
+                align-items: center
+                &__cycle
+                    width: 50vw
+                    height: auto
+            &__text1
+                grid-area: b
+                @include mainFont
+                color: #ffff
+                font-weight: 600
+                align-self: flex-start
+                max-width: 16vw
+                min-width: 12vw
+                box-sizing: border-box
+                background: rgba(34, 32, 32, 0.42)
+                border: 1px solid rgba(34, 32, 32, 0.48)
+                backdrop-filter: blur(10.8px)
+                border-radius: 15px
+                padding: 20px
+                width: 100%
+                height: auto
+                font-size: 1.2vw
+                z-index: 1
+            &__text2
+                grid-area: c
+                @include mainFont
+                display: table
+                justify-items: end
+                font-size: 2vw
+                font-weight: 600
+                text-align: end
+                align-self: center
+                color: $main-color
+                width: 400px
+                z-index: 2
+                max-width: 100px
+                &__span
+                    color: #C17D17
+                    font-weight: bold
+        &__newCase
+            &__button
+                text-decoration: none
+                &__report
+                    display: block
+                    @include mainFont
+                    @include button
+                    width: 250px
+                    height: 70px
+                    font-weight: bold
+                    margin-top: 40px
+
+
+
+@media ( min-width: 0px ) and ( max-width: 768px )
+    .homePage
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 20px 5px
+        min-height: calc( 100vh - 312.8px)
+        min-width: 90vw
+        &__info
+            display: grid
+            grid-template-areas: 'a a a a''b b b .''. . c c'
+            min-height: calc( 100vh - 450px )
+            &__image
+                grid-area: a
+                @include center
+                margin-bottom: 20px
+                &__cycle
+                    width: 80vw
+                    height: auto
+            &__text1
+                grid-area: b
+                @include mainFont
+                color: #ffff
+                font-weight: 600
+                align-self: flex-start
+                max-width: 50vw
+                min-width: 50vw
+                box-sizing: border-box
+                background: rgba(34, 32, 32, 0.42)
+                border: 1px solid rgba(34, 32, 32, 0.48)
+                backdrop-filter: blur(10.8px)
+                border-radius: 15px
+                padding: 10px
+                width: 100%
+                height: auto
+                font-size: 14px
+                z-index: 1
+                margin-bottom: 10px
+            &__text2
+                grid-area: c
+                @include mainFont
+                display: table
+                justify-items: end
+                font-size: 16px
+                font-weight: 600
+                text-align: end
+                align-self: flex-end
+                color: $main-color
+                width: 100%
+                z-index: 2
+                max-width: 100px
+                &__span
+                    color: #C17D17
+                    font-weight: bold
+        &__newCase
+            &__button
+                text-decoration: none
+                &__report
+                    display: block
+                    @include mainFont
+                    font-size: 16px
+                    @include button
+                    width: fit-content
+                    height: 50px
+                    font-weight: bold
+                    margin-top: 20px

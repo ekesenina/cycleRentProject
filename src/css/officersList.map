@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "officersList.css",
+	"sources": [
+		"../sass/officersList.sass"
+	],
+	"sourcesContent": [
+		""
+	],
+	"names": [],
+	"mappings": ""
+}

@@ -1,0 +1,161 @@
+@font-face 
+    font-family: 'main'
+    src: url(../fonts/MullerRegular.ttf)
+
+@keyframes rotate
+    to 
+        transform: rotate(360deg)
+
+
+$main-color: #232020
+$secondary-color: #FFCB03
+
+
+
+$content: 0px 40px
+
+
+
+@mixin layout
+    width: 100vw
+    min-height: calc( 100vh - 200px )
+    background-color: #EDF6F9
+    background-image: url(../img/bubbles.svg) 
+    background-position: center center
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+
+
+@mixin layoutMobile
+    width: 100vw
+    min-height: calc( 100vh - 272.8px )
+    background-image: url(../img/bubbles.svg) 
+    background-position: center center
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+
+@mixin mainFont
+    font-family: 'main'
+    font-size: 18px
+    text-decoration: none
+    color: #ffff
+    text-transform: uppercase
+
+@mixin secondaryFont
+    font-family: 'main'
+    font-size: 18px
+    text-decoration: none
+    color: #ffff
+    text-transform: none
+
+@mixin center
+    display: flex
+    align-items: center
+    justify-content: center
+
+@mixin transition
+    transition: all 
+    transition-duration: 0.5s
+
+@mixin button
+    border-radius: 30px
+    background-color: $secondary-color
+    cursor: pointer
+    color: $main-color
+    padding: 10px 15px
+    border: none
+    filter: drop-shadow(8px 7px 4px rgba(0, 0, 0, 0.25))
+    @include transition
+    &:hover
+        background-color: #C17D17
+        color: #FFFFFF
+        box-shadow: inset 2px 4px 6px rgba(0, 0, 0, 0.25)
+        @include transition
+
+@mixin link
+    @include mainFont
+    text-transform: none
+    text-decoration: none
+    &:hover
+        @include transition
+        color: #C17D17
+        text-decoration: underline
+
+@mixin window
+    min-width: fit-content
+    min-height: fit-content
+    @include popUp
+    @include center
+    @include mainFont
+    flex-direction: column
+    color: $secondary-color
+    margin: 35px 60px
+    position: relative
+    &__title
+        @include mainFont
+        font-size: 24px
+        color: $secondary-color
+
+
+@mixin popUp
+    background: rgba(35, 32, 32, 0.57)
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25)
+    background-filter: blur(15px)
+    border-radius: 15px
+    padding: 20px
+
+@mixin input
+    padding: 10px
+    border-radius: 6px
+    min-width: 15rem
+    background: rgba(54, 54, 54, 0.63)
+    border: 1px solid rgba(54, 54, 54, 0.01)
+    color: #ffff
+    resize: none
+    &:focus,
+    &:active
+        border: 2px solid $secondary-color 
+        outline: none
+
+
+@mixin scroll
+    &__scroll::-webkit-scrollbar
+        border-radius: 20px
+        width: 6px
+        padding: 0px 20px
+    &__scroll::-webkit-scrollbar-track 
+        background: #0006
+        border-radius: 20px
+    &__scroll::-webkit-scrollbar-thumb 
+        background: $secondary-color 
+        border-radius: 20px
+    &__scroll::-webkit-scrollbar-thumb:hover 
+        background: #C17D17
+        border-radius: 20px
+
+@mixin backButton
+    cursor: pointer
+    position: absolute
+    top: 15px
+    left: 15px
+
+::-webkit-scrollbar 
+    width: 10px
+
+::-webkit-scrollbar-track 
+   background-color: #1d1b1b94
+
+::-webkit-scrollbar-thumb 
+    background-color: $secondary-color
+    border-radius: 10px
+
+
+
+@keyframes rotate
+    to 
+        transform: rotate(360deg)
+
+.loader
+    animation: rotate 3s infinite linear
