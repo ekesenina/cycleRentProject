@@ -182,11 +182,7 @@ const OfficerDetail = (props) => {
                           onClick={handleClickPassword}
                         >
                           <div className="caseDetail__form__item__label">Пароль</div>
-                          <div className="caseDetail__form__item__enabled"> Сменить пароль
-                            {/* {!values.passwordConfirmation
-                              ? values.oldPassword
-                              : values.passwordConfirmation} */}
-                          </div>
+                          <div className="caseDetail__form__item__enabled"> Сменить пароль</div>
                         </div>
                       )}
 
@@ -221,7 +217,7 @@ const OfficerDetail = (props) => {
                           onClick={handleClickPassword}
                         >
                           <div className="caseDetail__form__item__label">
-                            Подтвердите <br/> новый пароль
+                            Подтвердите <br /> новый пароль
                           </div>
                           <div className="caseDetail__form__item__enabled">
                             <Field
