@@ -234,18 +234,18 @@ export const getOneOfficer = (id) => {
 export const editOfficer = (id, values) => {
   return function (dispatch) {
     dispatch(editOfficerRequest());
+    const requestData = {
+      firstName: values.firstName,
+      lastName: values.lastName,
+      approved: values.approved,
+    };
+    if (values.password) {
+      requestData.password = values.password
+    }
     axios
       .put(
         `officers/${id}`,
-        {
-          firstName: values.firstName,
-          lastName: values.lastName,
-          password:
-            values.passwordConfirmation === ""
-              ? values.oldPassword
-              : values.passwordConfirmation,
-          approved: values.approved,
-        },
+        requestData,
         {
           headers: authHeader(),
         }
