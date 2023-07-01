@@ -73,7 +73,7 @@ const OfficerDetail = (props) => {
         ),
         lastName: Yup.string().max(
           20,
-          "Это поле должно быть менее 20 символов"
+          "Поле должно быть менее 20 символов"
         ),
         oldPassword: Yup.string(),
         newPassword: Yup.string().when((isClickedPassword, schema) => {
@@ -131,14 +131,14 @@ const OfficerDetail = (props) => {
                             <Field
                               type="text"
                               name="firstName"
-                              className="caseDetail__form__item__input"
+                              className="caseDetail__form__item__enabled__input"
                               placeholder={"Ваше имя"}
                               onKeyPress={handleKeyPress}
                               onClick={(e) => e.stopPropagation()}
                             />
                           )}
                           <ErrorMessage
-                            className="caseDetail__form__item__input__invalid"
+                            className="caseDetail__form__item__enabled__invalid"
                             component="div"
                             name="firstName"
                           />
@@ -157,7 +157,7 @@ const OfficerDetail = (props) => {
                             <Field
                               type="text"
                               name="lastName"
-                              className="caseDetail__form__item__input"
+                              className="caseDetail__form__item__enabled__input"
                               placeholder={"Ваша фамилия"}
                               onKeyPress={handleKeyPress}
                               onClick={(e) => e.stopPropagation()}
@@ -166,7 +166,7 @@ const OfficerDetail = (props) => {
                           <ErrorMessage
                             component="div"
                             name="lastName"
-                            className="caseDetail__form__item__input__invalid"
+                            className="caseDetail__form__item__enabled__invalid"
                           />
                         </div>
                       </div>
@@ -196,7 +196,7 @@ const OfficerDetail = (props) => {
                             <Field
                               type="password"
                               name={"newPassword"}
-                              className="caseDetail__form__item__input"
+                              className="caseDetail__form__item__enabled__input"
                               placeholder={"Введите новый пароль"}
                               onKeyPress={handleKeyPress}
                               autoComplete="on"
@@ -205,7 +205,7 @@ const OfficerDetail = (props) => {
                             <ErrorMessage
                               component="div"
                               name="newPassword"
-                              className="caseDetail__form__item__input__invalid"
+                              className="caseDetail__form__item__enabled__invalid"
                             />
                           </div>
                         </div>
@@ -217,13 +217,13 @@ const OfficerDetail = (props) => {
                           onClick={handleClickPassword}
                         >
                           <div className="caseDetail__form__item__label">
-                            Подтвердите <br /> новый пароль
+                            Подтвердите <br /> пароль
                           </div>
                           <div className="caseDetail__form__item__enabled">
                             <Field
                               type="password"
                               name={"passwordConfirmation"}
-                              className="caseDetail__form__item__input"
+                              className="caseDetail__form__item__enabled__input"
                               placeholder={"Повторно введите новый пароль"}
                               onKeyPress={handleKeyPress}
                               autoComplete="on"
@@ -232,7 +232,7 @@ const OfficerDetail = (props) => {
                             <ErrorMessage
                               component="div"
                               name="passwordConfirmation"
-                              className="caseDetail__form__item__input__invalid"
+                              className="caseDetail__form__item__enabled__invalid"
                             />
                           </div>
                         </div>

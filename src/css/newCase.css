@@ -10,17 +10,17 @@
   }
 }
 
-/* line 144, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
+/* line 154, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* line 147, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
+/* line 157, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 ::-webkit-scrollbar-track {
   background-color: #1d1b1b94;
 }
 
-/* line 150, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
+/* line 160, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 ::-webkit-scrollbar-thumb {
   background-color: #FFCB03;
   border-radius: 10px;
@@ -32,7 +32,7 @@
   }
 }
 
-/* line 160, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
+/* line 170, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 .loader {
   animation: rotate 3s infinite linear;
 }
@@ -125,27 +125,14 @@
     color: #b40000;
   }
   /* line 37, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
-  .case__card__form__item__input {
-    position: relative;
-  }
-  /* line 39, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
-  .case__card__form__item__input__invalid {
+  .case__card__form__item__input, .case__card__form__item__select, .case__card__form__item__textarea {
+    min-height: 1em;
+    min-width: 25rem;
     font-family: 'main';
     font-size: 18px;
     text-decoration: none;
     color: #ffff;
     text-transform: none;
-    font-weight: bold;
-    position: absolute;
-    right: 0px;
-    bottom: -14px;
-    font-size: 14px;
-    color: #FFCB03;
-  }
-  /* line 47, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
-  .case__card__form__item__input, .case__card__form__item__select, .case__card__form__item__textarea {
-    min-height: 1em;
-    min-width: 25rem;
     padding: 10px;
     border-radius: 6px;
     min-width: 15rem;
@@ -153,23 +140,66 @@
     border: 1px solid rgba(54, 54, 54, 0.01);
     color: #ffff;
     resize: none;
-    margin-left: 50px;
   }
   /* line 117, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
   .case__card__form__item__input:focus, .case__card__form__item__input:active, .case__card__form__item__select:focus, .case__card__form__item__select:active, .case__card__form__item__textarea:focus, .case__card__form__item__textarea:active {
     border: 2px solid #FFCB03;
     outline: none;
   }
-  /* line 54, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 44, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__select {
     padding: 9px;
     min-width: 16.5rem;
   }
-  /* line 57, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 47, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__select__option {
     color: #b4b4b49a;
   }
+  /* line 49, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  .case__card__form__item__container {
+    position: relative;
+  }
+  /* line 51, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  .case__card__form__item__container__input, .case__card__form__item__container__select {
+    min-height: 1em;
+    min-width: 25rem;
+    font-family: 'main';
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffff;
+    text-transform: none;
+    padding: 10px;
+    border-radius: 6px;
+    min-width: 15rem;
+    background: rgba(54, 54, 54, 0.63);
+    border: 1px solid rgba(54, 54, 54, 0.01);
+    color: #ffff;
+    resize: none;
+  }
+  /* line 117, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
+  .case__card__form__item__container__input:focus, .case__card__form__item__container__input:active, .case__card__form__item__container__select:focus, .case__card__form__item__container__select:active {
+    border: 2px solid #FFCB03;
+    outline: none;
+  }
+  /* line 57, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  .case__card__form__item__container__select {
+    min-width: 16rem;
+  }
   /* line 59, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  .case__card__form__item__container__invalid {
+    font-family: 'main';
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffff;
+    text-transform: none;
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    bottom: -14px;
+    font-size: 13px;
+    color: #FFCB03;
+  }
+  /* line 61, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__button {
     border-radius: 30px;
     background-color: #FFCB03;
@@ -199,13 +229,13 @@
     transition: all;
     transition-duration: 0.5s;
   }
-  /* line 67, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 69, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__agree {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  /* line 69, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 71, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__agree__styledCheckbox {
     max-width: fit-content;
     display: flex;
@@ -215,15 +245,15 @@
     background: rgba(54, 54, 54, 0.63);
     border: 1px solid rgba(54, 54, 54, 0.01);
   }
-  /* line 77, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 79, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__agree__checkbox {
     opacity: 0;
   }
-  /* line 79, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 81, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__agree__checkbox:checked {
     opacity: 1;
   }
-  /* line 81, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 83, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__success {
     position: absolute;
     font-family: 'main';
@@ -248,11 +278,11 @@
     min-height: fit-content;
     max-height: 65vh;
   }
-  /* line 94, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 96, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__success__img {
     margin-bottom: 20px;
   }
-  /* line 96, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 98, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__success__button {
     font-family: 'main';
     font-size: 18px;
@@ -283,27 +313,27 @@
   }
 }
 
-/* line 105, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+/* line 107, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
 .unvisible {
   visibility: hidden;
   opacity: 0;
   transition: visibility 5s, opacity 0.5s linear;
 }
 
-/* line 110, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+/* line 112, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
 .visible {
   visibility: visible;
   opacity: 1;
   transition: visibility 5s, opacity 0.5s linear;
 }
 
-/* line 116, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+/* line 118, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
 .date::placeholder {
   opacity: 0.5;
 }
 
 @media (min-width: 0px) and (max-width: 768px) {
-  /* line 121, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 123, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case {
     min-width: fit-content;
     min-height: fit-content;
@@ -339,14 +369,14 @@
     font-size: 24px;
     color: #FFCB03;
   }
-  /* line 127, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 129, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__back {
     cursor: pointer;
     position: absolute;
     top: 15px;
     left: 15px;
   }
-  /* line 129, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 131, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card {
     min-width: -webkit-fill-available;
     display: flex;
@@ -354,18 +384,18 @@
     align-items: center;
     overflow: hidden;
   }
-  /* line 135, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 137, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__h1 {
     font-size: 20px;
     margin: 35px 0px 25px 0px;
   }
-  /* line 138, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 140, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form {
     width: fit-content;
     display: flex;
     flex-direction: column;
   }
-  /* line 142, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 144, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item {
     margin-bottom: 30px;
     display: flex;
@@ -373,11 +403,11 @@
     justify-content: space-between;
     position: relative;
   }
-  /* line 148, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 150, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item:last-child {
     margin: 10px 0px 0px;
   }
-  /* line 150, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 152, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__label {
     font-family: 'main';
     font-size: 18px;
@@ -386,16 +416,34 @@
     text-transform: none;
     max-width: 15rem;
   }
-  /* line 153, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 155, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__label__reqired {
     color: #b40000;
   }
-  /* line 155, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
-  .case__card__form__item__input {
+  /* line 157, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  .case__card__form__item__container {
     position: relative;
   }
-  /* line 157, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
-  .case__card__form__item__input__invalid {
+  /* line 159, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  .case__card__form__item__container__input, .case__card__form__item__container__select {
+    min-height: 1em;
+    padding: 10px;
+    border-radius: 6px;
+    min-width: 15rem;
+    background: rgba(54, 54, 54, 0.63);
+    border: 1px solid rgba(54, 54, 54, 0.01);
+    color: #ffff;
+    resize: none;
+    min-width: 15rem;
+    max-width: 15rem;
+  }
+  /* line 117, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
+  .case__card__form__item__container__input:focus, .case__card__form__item__container__input:active, .case__card__form__item__container__select:focus, .case__card__form__item__container__select:active {
+    border: 2px solid #FFCB03;
+    outline: none;
+  }
+  /* line 165, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  .case__card__form__item__container__invalid {
     font-family: 'main';
     font-size: 18px;
     text-decoration: none;
@@ -404,12 +452,15 @@
     font-weight: bold;
     position: absolute;
     left: 0px;
-    bottom: -15px;
+    bottom: -14px;
     font-size: 13px;
-    max-width: 20rem;
     color: #FFCB03;
   }
-  /* line 166, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 167, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  .case__card__form__item__container__select {
+    min-width: 16rem;
+  }
+  /* line 169, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__input, .case__card__form__item__select, .case__card__form__item__textarea {
     min-height: 1em;
     padding: 10px;
@@ -427,16 +478,16 @@
     border: 2px solid #FFCB03;
     outline: none;
   }
-  /* line 173, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 176, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__select {
     padding: 9px;
     min-width: 16.5rem;
   }
-  /* line 176, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 179, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__select__option {
     color: #b4b4b49a;
   }
-  /* line 178, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 181, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__button {
     border-radius: 30px;
     background-color: #FFCB03;
@@ -469,13 +520,13 @@
     transition: all;
     transition-duration: 0.5s;
   }
-  /* line 189, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 192, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__agree {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  /* line 191, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 194, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__agree__styledCheckbox {
     max-width: fit-content;
     display: flex;
@@ -485,15 +536,15 @@
     background: rgba(54, 54, 54, 0.63);
     border: 1px solid rgba(54, 54, 54, 0.01);
   }
-  /* line 199, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 202, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__agree__checkbox {
     opacity: 0;
   }
-  /* line 201, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 204, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__form__item__agree__checkbox:checked {
     opacity: 1;
   }
-  /* line 203, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 206, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__success {
     position: absolute;
     top: 150px;
@@ -518,11 +569,11 @@
     min-width: fit-content;
     min-height: fit-content;
   }
-  /* line 216, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 219, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__success__img {
     margin-bottom: 20px;
   }
-  /* line 218, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
+  /* line 221, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/newCase.sass */
   .case__card__success__button {
     font-family: 'main';
     font-size: 18px;

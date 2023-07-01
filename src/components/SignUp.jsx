@@ -48,7 +48,7 @@ const SignUp = (props) => {
           .required("Это поле обязательно для заполнения"),
         password: Yup.string()
           .min(3, "Пароль должен быть менее 12 символов")
-          .max(1200, "Пароль должен быть менее 1200 символов")
+          .max(12, "Пароль должен быть менее 12 символов")
           .required("Это поле обязательно для заполнения"),
         clientId: Yup.string().required("Это поле обязательно для заполнения"),
         firstName: Yup.string().max(
@@ -100,18 +100,20 @@ const SignUp = (props) => {
                           E-mail:
                           <span className="case__card__form__item__label__reqired">*</span>
                         </label>
-                        <Field
-                          type="email"
-                          className="signIn__form__item__input"
-                          id="email"
-                          name={"email"}
-                          placeholder="name@example.com"
-                        />
-                        <ErrorMessage
-                          name={"email"}
-                          className="signIn__form__item__input__invalid"
-                          component="div"
-                        />
+                        <div className="signIn__form__item__container">
+                          <Field
+                            type="email"
+                            className="signIn__form__item__container__input"
+                            id="email"
+                            name={"email"}
+                            placeholder="name@example.com"
+                          />
+                          <ErrorMessage
+                            name={"email"}
+                            className="signIn__form__item__container__invalid"
+                            component="div"
+                          />
+                        </div>
                       </div>
 
                       <div className="signIn__form__item">
@@ -119,19 +121,21 @@ const SignUp = (props) => {
                           Пароль:
                           <span className="case__card__form__item__label__reqired">*</span>
                         </label>
-                        <Field
-                          type="password"
-                          className="signIn__form__item__input"
-                          id="password"
-                          name={"password"}
-                          placeholder="Пароль"
-                          autoComplete="on"
-                        />
-                        <ErrorMessage
-                          name={"password"}
-                          className="signIn__form__item__input__invalid"
-                          component="div"
-                        />
+                        <div className="signIn__form__item__container">
+                          <Field
+                            type="password"
+                            className="signIn__form__item__container__input"
+                            id="password"
+                            name={"password"}
+                            placeholder="Пароль"
+                            autoComplete="on"
+                          />
+                          <ErrorMessage
+                            name={"password"}
+                            className="signIn__form__item__container__invalid"
+                            component="div"
+                          />
+                        </div>
                       </div>
 
                       <div className="signIn__form__item">
@@ -139,18 +143,20 @@ const SignUp = (props) => {
                           ID:
                           <span className="case__card__form__item__label__reqired">*</span>
                         </label>
-                        <Field
-                          type="text"
-                          className="signIn__form__item__input"
-                          id="clientId"
-                          name={"clientId"}
-                          placeholder="ID клиента"
-                        />
-                        <ErrorMessage
-                          name={"clientId"}
-                          className="signIn__form__item__input__invalid"
-                          component="div"
-                        />
+                        <div className="signIn__form__item__container">
+                          <Field
+                            type="text"
+                            className="signIn__form__item__container__input"
+                            id="clientId"
+                            name={"clientId"}
+                            placeholder="ID клиента"
+                          />
+                          <ErrorMessage
+                            name={"clientId"}
+                            className="signIn__form__item__container__invalid"
+                            component="div"
+                          />
+                        </div>
                       </div>
 
                       <div className="signIn__form__item">

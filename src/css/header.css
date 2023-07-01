@@ -10,17 +10,17 @@
   }
 }
 
-/* line 144, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
+/* line 154, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* line 147, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
+/* line 157, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 ::-webkit-scrollbar-track {
   background-color: #1d1b1b94;
 }
 
-/* line 150, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
+/* line 160, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 ::-webkit-scrollbar-thumb {
   background-color: #FFCB03;
   border-radius: 10px;
@@ -32,7 +32,7 @@
   }
 }
 
-/* line 160, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
+/* line 170, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 .loader {
   animation: rotate 3s infinite linear;
 }
@@ -106,8 +106,8 @@
     filter: drop-shadow(8px 7px 4px rgba(0, 0, 0, 0.25));
     transition: all;
     transition-duration: 0.5s;
-    width: 150px;
-    height: 70px;
+    width: 100px;
+    height: 50px;
   }
   /* line 71, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
   .header__nav__button__signIn:hover {
@@ -149,8 +149,8 @@
     border: none;
     cursor: pointer;
     color: #fff;
-    width: 48px;
-    height: 48px;
+    width: 70px;
+    height: 70px;
     background-image: url(../img/burger.png);
   }
   /* line 73, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/header.sass */
@@ -212,7 +212,7 @@
     transition: all;
     transition-duration: 0.5s;
     font-size: 16px;
-    width: 30vw;
+    width: 100px;
     height: 35px;
     align-self: center;
   }

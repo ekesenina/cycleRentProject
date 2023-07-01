@@ -38,7 +38,7 @@ const SignIn = (props) => {
           .required("Это поле обязательно для заполнения"),
         password: Yup.string()
           .min(3, "Пароль должен быть больше 3 символов")
-          .max(12, "Пароль должен быть менее 12символов")
+          .max(12, "Пароль должен быть менее 12 символов")
           .required("Это поле обязательно для заполнения"),
       })}
       onSubmit={(values) => {
@@ -72,38 +72,42 @@ const SignIn = (props) => {
                         <label className="signIn__form__item__label" htmlFor="email">
                           E-mail:
                         </label>
-                        <Field
-                          type="email"
-                          className="signIn__form__item__input"
-                          id="email"
-                          name={"email"}
-                          autoComplete="e-mail"
-                          placeholder="name@example.com"
-                        />
-                        <ErrorMessage
-                          name={"email"}
-                          className="signIn__form__item__input__invalid"
-                          component="div"
-                        />
+                        <div className="signIn__form__item__container">
+                          <Field
+                            type="email"
+                            className="signIn__form__item__container__input"
+                            id="email"
+                            name={"email"}
+                            autoComplete="e-mail"
+                            placeholder="name@example.com"
+                          />
+                          <ErrorMessage
+                            name={"email"}
+                            className="signIn__form__item__container__invalid"
+                            component="div"
+                          />
+                        </div>
                       </div>
 
                       <div className="signIn__form__item">
                         <label className="signIn__form__item__label" htmlFor="password">
                           Пароль:
                         </label>
-                        <Field
-                          type="password"
-                          className="signIn__form__item__input"
-                          id="password"
-                          name={"password"}
-                          autoComplete="on"
-                          placeholder="Пароль"
-                        />
-                        <ErrorMessage
-                          name={"password"}
-                          className="signIn__form__item__input__invalid"
-                          component="div"
-                        />
+                        <div className="signIn__form__item__container">
+                          <Field
+                            type="password"
+                            className="signIn__form__item__container__input"
+                            id="password"
+                            name={"password"}
+                            autoComplete="on"
+                            placeholder="Пароль"
+                          />
+                          <ErrorMessage
+                            name={"password"}
+                            className="signIn__form__item__container__invalid"
+                            component="div"
+                          />
+                        </div>
                       </div>
 
                       <MainButton

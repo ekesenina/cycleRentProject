@@ -120,6 +120,16 @@ $content: 0px 40px
         outline: none
 
 
+@mixin hint
+    @include secondaryFont
+    font-weight: bold
+    position: absolute
+    left: 0px
+    bottom: -14px
+    font-size: 13px
+    color: $secondary-color
+    
+
 @mixin scroll
     &__scroll::-webkit-scrollbar
         border-radius: 20px

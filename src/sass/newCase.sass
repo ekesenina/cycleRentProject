@@ -34,28 +34,30 @@
                         @include secondaryFont
                         &__reqired
                             color: #b40000
-                    &__input
-                        position: relative
-                        &__invalid
-                            @include secondaryFont
-                            font-weight: bold
-                            position: absolute
-                            right: 0px
-                            bottom: -14px
-                            font-size: 14px
-                            color: $secondary-color
                     &__input, 
                     &__select, 
                     &__textarea
                         min-height: 1em
                         min-width: 25rem
+                        @include secondaryFont
                         @include input
-                        margin-left: 50px
                     &__select
                         padding: 9px
                         min-width: 16.5rem
                         &__option
                             color: #b4b4b49a
+                    &__container
+                        position: relative
+                        &__input,
+                        &__select
+                            min-height: 1em
+                            min-width: 25rem
+                            @include secondaryFont
+                            @include input
+                        &__select
+                            min-width: 16rem
+                        &__invalid
+                            @include hint
                     &__button
                         @include button
                         @include mainFont
@@ -152,17 +154,18 @@
                         max-width: 15rem
                         &__reqired
                             color: #b40000
-                    &__input
+                    &__container
                         position: relative
+                        &__input,
+                        &__select
+                            min-height: 1em
+                            @include input
+                            min-width: 15rem
+                            max-width: 15rem
                         &__invalid
-                            @include secondaryFont
-                            font-weight: bold
-                            position: absolute
-                            left: 0px
-                            bottom: -15px
-                            font-size: 13px
-                            max-width: 20rem
-                            color: $secondary-color
+                            @include hint
+                        &__select
+                            min-width: 16rem
                     &__input, 
                     &__select, 
                     &__textarea

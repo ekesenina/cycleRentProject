@@ -51,6 +51,24 @@
                     position: relative
                     &__required
                         color: $secondary-color
+                &__input
+                        @include input
+                        margin: 0px
+                &__container
+                    position: relative
+                    &__input
+                        @include input
+                        margin: 0px
+                    &__invalid
+                        @include hint
+                    &__passwordShow
+                        @include input
+                        min-height: -webkit-fill-available
+                        position: absolute
+                        right: 0px
+                        opacity: 0
+                        min-width: max-content
+                        background-origin: content-box
                 &__agree
                     display: flex
                     max-width: -webkit-fill-available
@@ -65,29 +83,10 @@
                         opacity: 0
                         &:checked
                             opacity: 1
-                &__input
-                    @include input
-                    margin: 0px
-                    &__invalid
-                        @include secondaryFont
-                        font-weight: bold
-                        position: absolute
-                        right: 0px
-                        bottom: -14px
-                        font-size: 14px
-                        color: $secondary-color
-                    &__passwordShow
-                        @include input
-                        min-height: -webkit-fill-available
-                        position: absolute
-                        right: 0px
-                        opacity: 0
-                        min-width: max-content
-                        background-origin: content-box
             &__button
                 @include mainFont
                 @include button
-                padding: 20px 25px
+                padding: 15px
                 max-width: fit-content
 
 
@@ -166,14 +165,13 @@
                 &__input
                     @include input
                     margin: 0px
+                &__container
+                    position: relative
+                    &__input
+                        @include input
+                        margin: 0px
                     &__invalid
-                        @include secondaryFont
-                        font-weight: bold
-                        position: absolute
-                        right: 0px
-                        bottom: -14px
-                        font-size: 14px
-                        color: $secondary-color
+                        @include hint
                     &__passwordShow
                         @include input
                         min-height: -webkit-fill-available
@@ -185,7 +183,7 @@
             &__button
                 @include mainFont
                 @include button
-                padding: 20px 25px
+                padding: 15px
                 max-width: fit-content
                 margin: 20px 0px
 

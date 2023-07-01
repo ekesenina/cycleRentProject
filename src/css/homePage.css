@@ -10,17 +10,17 @@
   }
 }
 
-/* line 144, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
+/* line 154, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* line 147, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
+/* line 157, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 ::-webkit-scrollbar-track {
   background-color: #1d1b1b94;
 }
 
-/* line 150, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
+/* line 160, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 ::-webkit-scrollbar-thumb {
   background-color: #FFCB03;
   border-radius: 10px;
@@ -32,7 +32,7 @@
   }
 }
 
-/* line 160, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
+/* line 170, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 .loader {
   animation: rotate 3s infinite linear;
 }

@@ -89,20 +89,22 @@ const NewCasePublic = (props) => {
                             Лицензионный номер:
                             <span className="case__card__form__item__label__reqired">*</span>
                           </label>
-                          <Field
-                            type="text"
-                            name={"licenseNumber"}
-                            className="case__card__form__item__input"
-                            placeholder="Лицензионный номер '12345'"
-                            id="licenseNumber"
-                            pattern="^[ 0-9]+$" 
-                            required
-                          />
-                          <ErrorMessage
-                            name={"licenseNumber"}
-                            className="case__card__form__item__input__invalid"
-                            component="div"
-                          />
+                          <div className="case__card__form__item__container">
+                            <Field
+                              type="text"
+                              name={"licenseNumber"}
+                              className="case__card__form__item__container__input"
+                              placeholder="Лицензионный номер '12345'"
+                              id="licenseNumber"
+                              pattern="^[ 0-9]+$" 
+                              required
+                            />
+                            <ErrorMessage
+                              name={"licenseNumber"}
+                              className="case__card__form__item__container__invalid"
+                              component="div"
+                            />
+                          </div>
                         </div>
 
                         <div className="case__card__form__item">
@@ -113,19 +115,21 @@ const NewCasePublic = (props) => {
                             ФИО:
                             <span className="case__card__form__item__label__reqired">*</span>
                           </label>
-                          <Field
-                            type="text"
-                            name={"ownerFullName"}
-                            className="case__card__form__item__input"
-                            placeholder="ФИО владельца"
-                            id="ownerFullName"
-                            required
-                          />
-                          <ErrorMessage
-                            name={"ownerFullName"}
-                            className="case__card__form__item__input__invalid"
-                            component="div"
-                          />
+                          <div className="case__card__form__item__container">
+                            <Field
+                              type="text"
+                              name={"ownerFullName"}
+                              className="case__card__form__item__container__input"
+                              placeholder="ФИО владельца"
+                              id="ownerFullName"
+                              required
+                            />
+                            <ErrorMessage
+                              name={"ownerFullName"}
+                              className="case__card__form__item__container__invalid"
+                              component="div"
+                            />
+                          </div>
                         </div>
 
                         <div className="case__card__form__item">
@@ -136,30 +140,32 @@ const NewCasePublic = (props) => {
                             Тип <br/> велосипеда:
                             <span className="case__card__form__item__label__reqired">*</span>
                           </label>
-                          <Field
-                            as={"select"}
-                            className="case__card__form__item__select"
-                            name={"type"}
-                            id="type"
-                            required
-                          >
-                            <option value="DEFAULT" disabled>
-                              Выберите...
-                            </option>
-                            {bicycleType &&
-                              bicycleType.map((item, index) => {
-                                return (
-                                  <option value={item.value} key={index}>
-                                    {item.title}
-                                  </option>
-                                );
-                              })}
-                          </Field>
-                          <ErrorMessage
-                            name={"type"}
-                            className="case__card__form__item__input__invalid"
-                            component="div"
-                          />
+                          <div className="case__card__form__item__container">
+                            <Field
+                              as={"select"}
+                              className="case__card__form__item__container__select"
+                              name={"type"}
+                              id="type"
+                              required
+                            >
+                              <option value="DEFAULT" disabled>
+                                Выберите...
+                              </option>
+                              {bicycleType &&
+                                bicycleType.map((item, index) => {
+                                  return (
+                                    <option value={item.value} key={index}>
+                                      {item.title}
+                                    </option>
+                                  );
+                                })}
+                            </Field>
+                            <ErrorMessage
+                              name={"type"}
+                              className="case__card__form__item__container__invalid"
+                              component="div"
+                            />
+                          </div>
                         </div>
 
                         <div className="case__card__form__item">
@@ -170,19 +176,21 @@ const NewCasePublic = (props) => {
                             ID клиента:
                             <span className="case__card__form__item__label__reqired">*</span>
                           </label>
-                          <Field
-                            type="text"
-                            name={"clientId"}
-                            className="case__card__form__item__input"
-                            placeholder="ID клиента"
-                            id="clientId"
-                            required
-                          />
-                          <ErrorMessage
-                            name={"clientId"}
-                            className="case__card__form__item__input__invalid"
-                            component="div"
-                          />
+                          <div className="case__card__form__item__container">
+                            <Field
+                              type="text"
+                              name={"clientId"}
+                              className="case__card__form__item__container__input"
+                              placeholder="ID клиента"
+                              id="clientId"
+                              required
+                            />
+                            <ErrorMessage
+                              name={"clientId"}
+                              className="case__card__form__item__container__invalid"
+                              component="div"
+                            />
+                          </div>
                         </div>
 
                         <div className="case__card__form__item">

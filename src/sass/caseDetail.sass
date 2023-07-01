@@ -3,13 +3,14 @@
 @media screen and ( min-width: 769px )
     .caseDetail
         @include window
-        margin: 20px
+        margin: 20px 0px
+        padding: 20px 40px
         flex-direction: row
         position: relative
         &__back
             @include backButton
         &__photo
-            height: 300px
+            width: 30vw
         &__button
             @include button
             @include secondaryFont
@@ -22,55 +23,46 @@
         &__form
             max-height: 500px
             overflow-y: auto
-            margin: 20px
             display: flex
             align-items: center
             flex-direction: column
             position: relative
-            &__editTime
+            &__time
                 text-align: end
                 @include secondaryFont
                 font-size: 14px
                 align-self: flex-end
-                padding-right: 10px
+                padding: 0px 10px 10px 0px
             &__item
                 display: flex
                 align-items: center
                 justify-content: space-between
                 min-width: -webkit-fill-available
-                padding: 10px 20px 10px 20px
+                margin-bottom: 20px
                 position: relative
                 &__label
                     @include secondaryFont
                     color: $secondary-color
                     font-weight: bold
                     padding: 9px
-                &__input
-                    position: relative
-                    &__invalid
-                        @include secondaryFont
-                        font-weight: bold
-                        position: absolute
-                        right: 0px
-                        bottom: -7px
-                        font-size: 14px
-                        padding-right: 20px
-                        color: $secondary-color
-                &__input, 
-                &__select, 
-                &__textarea
-                    min-height: 1em
-                    min-width: 25rem
-                    @include secondaryFont
-                    @include input
-                &__select
-                    padding: 9px
-                    min-width: 16.5rem
-                    &__option
-                        color: #b4b4b49a
                 &__enabled
+                    position: relative
                     &:hover
                         color: $secondary-color
+                    &__invalid
+                        @include hint
+                    &__input, 
+                    &__select, 
+                    &__textarea
+                        min-height: 1em
+                        min-width: 25rem
+                        @include secondaryFont
+                        @include input
+                    &__select
+                        padding: 9px
+                        min-width: 16.5rem
+                        &__option
+                            color: #b4b4b49a
                 &__enabled,
                 &__disabled
                     @include secondaryFont
@@ -80,7 +72,6 @@
                     color: #ffffff
                     resize: none
                     margin-left: 50px
-                    overflow-x: hidden
                     text-overflow: ellipsis
                     background-color: #ffffff00
                     cursor: pointer
@@ -90,8 +81,8 @@
     .caseDetail
         @include window
         margin: 20px 0px
-        padding: 0px
-        min-width: 90vw
+        padding: 20px 
+        min-width: fit-content
         max-width: 90vw
         &__back
             @include backButton
@@ -114,15 +105,19 @@
             display: flex
             align-items: center
             flex-direction: column
-            min-width: 80vw
-            max-width: 85vw
-            &__editTime
+            min-width: fit-content
+            max-width: fit-content
+            &__time
                 text-align: end
                 @include secondaryFont
                 font-size: 14px
                 align-self: flex-end
                 margin-top: 40px
                 padding-right: 10px
+                max-width: fit-content
+                &__edit,
+                &__create
+                    max-width: 20em
             &__item
                 display: flex
                 flex-direction: column
@@ -136,32 +131,30 @@
                     color: $secondary-color
                     font-weight: bold
                     padding: 9px
-                &__input
+                &__enabled
                     position: relative
+                    &:hover
+                        color: $secondary-color
                     &__invalid
                         @include secondaryFont
                         font-weight: bold
                         position: absolute
-                        right: 0px
-                        bottom: -7px
-                        font-size: 14px
-                        padding-right: 10px
+                        left: 0px
+                        bottom: -14px
+                        font-size: 13px
                         color: $secondary-color
-                &__input, 
-                &__select, 
-                &__textarea
-                    min-height: 1em
-                    min-width: 25rem
-                    @include secondaryFont
-                    @include input
-                &__select
-                    padding: 9px
-                    min-width: 16.5rem
-                    &__option
-                        color: #b4b4b49a
-                &__enabled
-                    &:hover
-                        color: $secondary-color
+                    &__input, 
+                    &__select, 
+                    &__textarea
+                        min-height: 1em
+                        min-width: 25rem
+                        @include secondaryFont
+                        @include input
+                    &__select
+                        padding: 9px
+                        min-width: 16.5rem
+                        &__option
+                            color: #b4b4b49a
                 &__enabled,
                 &__disabled
                     @include secondaryFont
@@ -171,7 +164,6 @@
                     color: #ffffff
                     resize: none
                     margin-left: 50px
-                    overflow-x: hidden
                     text-overflow: ellipsis
                     background-color: #ffffff00
                     cursor: pointer

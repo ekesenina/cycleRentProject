@@ -149,8 +149,8 @@ const CaseDetail = (props) => {
                       <img src={back} alt="logo" className="caseDetail__back" />
                     </Link>
                     <Form className="caseDetail__form">
-                      <div colSpan="2" className="caseDetail__form__editTime">
-                        <div>
+                      <div colSpan="2" className="caseDetail__form__time">
+                        <div className="caseDetail__form__time__edit">
                           Сообщение было создано{" "}
                           {new Date(
                             someCase.createdAt
@@ -162,7 +162,7 @@ const CaseDetail = (props) => {
                         </div>
 
                         {someCase && (
-                          <div>
+                          <div className="caseDetail__form__time__create">
                             {!someCase.updatedAt
                               ? "Сообщение не редактировалось"
                               : `Сообщение было отредактировано ${new Date(
@@ -177,7 +177,7 @@ const CaseDetail = (props) => {
                       <div>
                         <div onClick={handleClickStatus} className="caseDetail__form__item">
                           <div className="caseDetail__form__item__label">Статус</div>
-                          <div className="caseDetail__form__item__disabled">
+                          <div className="caseDetail__form__item__enabled">
                             {!isClickedStatus ? (
                               (values.status === "new" && "Открыто") ||
                               (values.status === "in_progress" && "В процессе") ||
@@ -185,7 +185,7 @@ const CaseDetail = (props) => {
                             ) : (
                               <Field
                                 as="select"
-                                className="caseDetail__form__item__select"
+                                className="caseDetail__form__item__enabled__select"
                                 name="status"
                                 onClick={(e) => e.stopPropagation()}
                               >
@@ -211,12 +211,12 @@ const CaseDetail = (props) => {
                             className="caseDetail__form__item"
                           >
                             <div className="caseDetail__form__item__label">Решение</div>
-                            <div className="caseDetail__form__item__disabled">
+                            <div className="caseDetail__form__item__enabled">
                               {!isClickedResolution &&
                               someCase && !someCase.resolution ? (
                                 <Field
                                   as="textarea"
-                                  className="caseDetail__form__item__textarea"
+                                  className="caseDetail__form__item__enabled__textarea"
                                   name={"resolution"}
                                   placeholder="Опишите как был решён случай"
                                   onClick={(e) => e.stopPropagation()}
@@ -227,7 +227,7 @@ const CaseDetail = (props) => {
                               <ErrorMessage
                                 name={"resolution"}
                                 component="div"
-                                className="caseDetail__form__item__input__invalid"
+                                className="caseDetail__form__item__enabled__invalid"
                               />
                             </div>
                           </div>
@@ -239,14 +239,14 @@ const CaseDetail = (props) => {
                         >
                           <div className="caseDetail__form__item__label">Лицензионный номер</div>
 
-                          <div className="caseDetail__form__item__disabled">
+                          <div className="caseDetail__form__item__enabled">
                             {!isClickedLicenseNumber ? (
                               values.licenseNumber
                             ) : (
                               <Field
                                 type="text"
                                 name={"licenseNumber"}
-                                className="caseDetail__form__item__input"
+                                className="caseDetail__form__item__enabled__input"
                                 placeholder={"Введите лицензионный номер"}
                                 onKeyPress={handleKeyPress}
                                 onClick={(e) => e.stopPropagation()}
@@ -255,7 +255,7 @@ const CaseDetail = (props) => {
                             <ErrorMessage
                               name={"licenseNumber"}
                               component="div"
-                              className="caseDetail__form__item__input__invalid"
+                              className="caseDetail__form__item__enabled__invalid"
                             />
                           </div>
                         </div>
@@ -266,14 +266,14 @@ const CaseDetail = (props) => {
                         >
                           <div className="caseDetail__form__item__label">ФИО</div>
 
-                          <div className="caseDetail__form__item__disabled">
+                          <div className="caseDetail__form__item__enabled">
                             {!isClickedOwnerFullName ? (
                               values.ownerFullName
                             ) : (
                               <Field
                                 type="text"
                                 name={"ownerFullName"}
-                                className="caseDetail__form__item__input"
+                                className="caseDetail__form__item__enabled__input"
                                 placeholder={"Введите ФИО владельца"}
                                 onClick={(e) => e.stopPropagation()}
                               />
@@ -281,7 +281,7 @@ const CaseDetail = (props) => {
                             <ErrorMessage
                               name={"ownerFullName"}
                               component="div"
-                              className="caseDetail__form__item__input__invalid"
+                              className="caseDetail__form__item__enabled__invalid"
                             />
                           </div>
                         </div>
@@ -292,14 +292,14 @@ const CaseDetail = (props) => {
                         >
                           <div className="caseDetail__form__item__label">Тип</div>
 
-                          <div className="caseDetail__form__item__disabled">
+                          <div className="caseDetail__form__item__enabled">
                             {!isClickedType ? (
                               (values.type === "general" && "Обычный") ||
                               (values.type === "sport" && "Спортивный")
                             ) : (
                               <Field
                                 as="select"
-                                className="caseDetail__form__item__select"
+                                className="caseDetail__form__item__enabled__select"
                                 name="type"
                                 onClick={(e) => e.stopPropagation()}
                               >
@@ -325,14 +325,14 @@ const CaseDetail = (props) => {
                         >
                           <div className="caseDetail__form__item__label">Цвет</div>
 
-                          <div className="caseDetail__form__item__disabled">
+                          <div className="caseDetail__form__item__enabled">
                             {!isClickedColor ? (
                               values.color
                             ) : (
                               <Field
                                 type="text"
                                 name={"color"}
-                                className="caseDetail__form__item__input"
+                                className="caseDetail__form__item__enabled__input"
                                 placeholder={"Напишите цвет велосипеда"}
                                 onClick={(e) => e.stopPropagation()}
                               />
@@ -346,7 +346,7 @@ const CaseDetail = (props) => {
                         >
                           <div className="caseDetail__form__item__label">Сотрудник</div>
 
-                          <div className="caseDetail__form__item__disabled">
+                          <div className="caseDetail__form__item__enabled">
                             {!isClickedOfficer ? (
                               officers.find(
                                 (officer) => officer._id === values.officer
@@ -376,7 +376,7 @@ const CaseDetail = (props) => {
                             ) : (
                               <Field
                                 as="select"
-                                className="caseDetail__form__item__select"
+                                className="caseDetail__form__item__enabled__select"
                                 name="officer"
                                 onClick={(e) => e.stopPropagation()}
                               >
@@ -407,13 +407,13 @@ const CaseDetail = (props) => {
                         >
                           <div className="caseDetail__form__item__label">Описание</div>
 
-                          <div className="caseDetail__form__item__disabled">
+                          <div className="caseDetail__form__item__enabled">
                             {!isClickedDescription ? (
                               values.description
                             ) : (
                               <Field
                                 as="textarea"
-                                className="caseDetail__form__item__textarea"
+                                className="caseDetail__form__item__enabled__textarea"
                                 name={"description"}
                                 placeholder="Опишите случай"
                                 onClick={(e) => e.stopPropagation()}
