@@ -69,24 +69,24 @@ const OfficerDetail = (props) => {
       validationSchema={Yup.object({
         firstName: Yup.string().max(
           15,
-          "Это поле может содержать менее 15 символов"
+          "Поле должно быть менее 15 символов"
         ),
         lastName: Yup.string().max(
           20,
-          "Это поле может содержать менее 20 символов"
+          "Это поле должно быть менее 20 символов"
         ),
         oldPassword: Yup.string(),
         newPassword: Yup.string().when((isClickedPassword, schema) => {
           if (isClickedPassword)
             return schema
-              .min(3, "Пароль должен быть больше 3 символов")
-              .max(1200, "Пароль должен быть меньше 1200 символов")
+              .min(3, "Пароль может быть больше 3 символов")
+              .max(12, "Пароль может быть менее 12 символов")
               .required("Это поле обязательно для заполнения");
         }),
         passwordConfirmation: Yup.string()
           .when("password", (isClickedPassword, schema) => {
             if (isClickedPassword)
-              return schema.required("Подтверждение нового пароля обязательно");
+              return schema.required("Подтверждение пароля обязательно");
           })
           .oneOf([Yup.ref(" newPassword")], "Пароли должны быть одинаковыми"),
         approved: Yup.boolean(),

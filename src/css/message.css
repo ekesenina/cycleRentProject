@@ -10,17 +10,17 @@
   }
 }
 
-/* line 144, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/variables.sass */
+/* line 144, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* line 147, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/variables.sass */
+/* line 147, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 ::-webkit-scrollbar-track {
   background-color: #1d1b1b94;
 }
 
-/* line 150, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/variables.sass */
+/* line 150, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 ::-webkit-scrollbar-thumb {
   background-color: #FFCB03;
   border-radius: 10px;
@@ -32,12 +32,12 @@
   }
 }
 
-/* line 160, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/variables.sass */
+/* line 160, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 .loader {
   animation: rotate 3s infinite linear;
 }
 
-/* line 3, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/message.sass */
+/* line 3, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/message.sass */
 .message {
   position: absolute;
   top: 150px;
@@ -63,18 +63,18 @@
   min-height: fit-content;
 }
 
-/* line 16, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/message.sass */
+/* line 16, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/message.sass */
 .message__title {
   max-width: 70vw;
   text-align: center;
 }
 
-/* line 19, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/message.sass */
+/* line 19, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/message.sass */
 .message__img {
   margin-bottom: 20px;
 }
 
-/* line 21, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/message.sass */
+/* line 21, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/message.sass */
 .message__button {
   font-family: 'main';
   font-size: 18px;
@@ -96,7 +96,7 @@
   margin: 20px 0px;
 }
 
-/* line 71, ../../home/kate/Рабочий стол/course/cycleRent_finalProject/src/sass/variables.sass */
+/* line 71, ../../home/kate/Рабочий стол/course/cycleRentProject/cycleRentProject/src/sass/variables.sass */
 .message__button:hover {
   background-color: #C17D17;
   color: #FFFFFF;
