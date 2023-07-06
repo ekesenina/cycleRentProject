@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/cycleRentProject/static/css/main.2b7bce8e.css",
+    "main.js": "/cycleRentProject/static/js/main.3db69381.js",
+    "static/js/787.4d8f6785.chunk.js": "/cycleRentProject/static/js/787.4d8f6785.chunk.js",
+    "static/media/cycle.png": "/cycleRentProject/static/media/cycle.23c0eaf8b5fc2700ad5f.png",
+    "static/media/MullerRegular.ttf": "/cycleRentProject/static/media/MullerRegular.7c0a0b947ca151baae3e.ttf",
+    "static/media/logo.svg": "/cycleRentProject/static/media/logo.2ca6ae6cc0a1d448db1521204ad76e74.svg",
+    "static/media/officerImg.svg": "/cycleRentProject/static/media/officerImg.dcc329c7d79f79b88dc960171d63d2ad.svg",
+    "static/media/logo_footer.svg": "/cycleRentProject/static/media/logo_footer.29cc5ff6171d470a335f272bf8b1fc3c.svg",
+    "static/media/success.svg": "/cycleRentProject/static/media/success.8f803bbe11f55263a870590910d06dee.svg",
+    "static/media/no-view.svg": "/cycleRentProject/static/media/no-view.a8a912f6922b79e86612.svg",
+    "static/media/view.svg": "/cycleRentProject/static/media/view.3d09dba6424d80a469e5.svg",
+    "index.html": "/cycleRentProject/index.html",
+    "static/media/back.svg": "/cycleRentProject/static/media/back.f97540c308f04603210963a56596b787.svg",
+    "static/media/bubbles.svg": "/cycleRentProject/static/media/bubbles.73defb1e13c85f4ebead.svg",
+    "main.2b7bce8e.css.map": "/cycleRentProject/static/css/main.2b7bce8e.css.map",
+    "main.3db69381.js.map": "/cycleRentProject/static/js/main.3db69381.js.map",
+    "787.4d8f6785.chunk.js.map": "/cycleRentProject/static/js/787.4d8f6785.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b7bce8e.css",
+    "static/js/main.3db69381.js"
+  ]
+}
